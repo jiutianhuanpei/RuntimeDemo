@@ -138,7 +138,7 @@ NSDictionary *modelToDic(id object) {
 
 void SHBLogObject(id object) {
     NSDictionary *dic = modelToDic(object);
-    NSLog(@"<%@>:\n%@", object, dic);
+    NSLog(@"%@:\n%@", object, dic);
 }
 
 

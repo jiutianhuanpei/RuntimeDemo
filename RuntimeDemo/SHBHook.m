@@ -28,7 +28,6 @@
     self = [super init];
     if (self) {
         
-        
         Class class1 = [[UIApplication sharedApplication].delegate class];
         Class class2 = [self class];
         
@@ -36,6 +35,7 @@
         SEL shbToken = @selector(shb_application:didRegisterForRemoteNotificationsWithDeviceToken:);
         
         AssociateWithSelector(class1, token, class2, shbToken);
+        
     }
     return self;
 }
